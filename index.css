@@ -1,0 +1,270 @@
+html, body, img, div, input, p, span, textarea {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 1000px;
+}
+
+body {
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-height:100vh;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  padding: 46px 0;
+  background-color: #eee;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+input {
+  -webkit-appearance: none !important;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+.search-result-item {
+  margin-bottom: 10px;
+}
+
+.input {
+  outline: none;
+  background: none;
+  width: 300px;
+  height: 50px;
+  display: block;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.submit {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.search-result-email {
+  margin-left: 10px;
+}
+
+header {
+  height: 46px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+  line-height: 46px;
+  font-size: 16px;
+  color: #bbb;
+  text-align: center;
+}
+
+header span {
+  cursor: pointer;
+}
+
+header span:last-child {
+  margin-left: 10px;
+}
+
+.submit {
+  cursor: pointer;
+}
+
+.add {
+  height: 400px;
+  background: #fff;
+  padding: 60px;
+}
+
+.add .input, .add .submit {
+  margin: 0 auto 30px auto;
+}
+
+.search {
+  height: 400px;
+  background: #fff;
+  padding: 60px;
+  display: none;
+}
+
+.add-box {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.input-box {
+  width: 400px;
+  display: inline-block;
+  margin-right: 50px;
+  padding-top: 40px;
+}
+
+.search-result {
+  padding-top: 40px;
+  display: inline-block;
+  width: 400px;
+  height: 250px;
+  vertical-align: top;
+}
+
+.active {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.info {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.info p {
+  line-height: 1.8;
+  font-size: 14px;
+  color: #333;
+}
+
+.blod {
+  font-weight: 600;
+}
+
+.red {
+  color: red;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 46px;
+  left: 0px;
+  right: 0px;
+  background: #000;
+  text-align: center;
+  line-height: 46px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #bbb;
+  margin-right: 10px;
+}
+
+.footer a:last-child {
+  margin: 0px;
+}
+
+.toast {
+  width: 900px;
+  height: 36px;
+  position: fixed;
+  z-index: 10000;
+  top: 100px;
+  left: 50%;
+  line-height: 36px;
+  font-size: 14px;
+  color: rgb(64, 64, 64);
+  background-color: #ccc;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: -450px;
+  opacity: 0;
+  transition: opacity 2s;
+  -moz-transition: opacity 2s; /* Firefox 4 */
+  -webkit-transition: opacity 2s; /* Safari 和 Chrome */
+  -o-transition: opacity 2s; /* Opera */
+  display: none;
+}
+
+.toast-show {
+  opacity: 1;
+}
+
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite; /* Firefox */
+  -webkit-animation: spin 1.5s linear infinite;  /* Safari 和 Chrome */
+  -o-animation: spin 1.5s linear infinite; /* Opera */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>另一个你-AnotherYou</title>
+  <meta name="renderer" content="webkit" />
+  <meta name="format-detection" content="telephone=no,email=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+  <meta name="Language" content="zh-CN" />
+  <meta name="Copyright" content="恐龙" />
+  <meta name="Designer" content="恐龙" />
+  <meta name="Publisher" content="恐龙" />
+  <meta name="Distribution" content="Global" />
+  <meta name="author"  content="恐龙" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow,archive" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <span class="active" id="nav-input">录入我的信息</span>
+    <span id="nav-search">查询另一个我</span>
+  </header>
+  <div class="body">
+    <div class="add" id="add">
+      <input type="date" class="input" name="date" id="add-date" />
+      <input type="text" name="email" class="input" id="add-email" placeholder="email-邮箱" />
+      <div class="submit" id="add-submit">提交</div>
+    </div>
+    <div id="search" class="search">
+      <div class="add-box">
+        <div class="input-box">
+          <input type="date" class="input" name="date" id="search-date" />
+          <div class="submit" id="search-input">查询</div>
+        </div>
+        <div class="search-result" id="search-result">
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p>另一个你网站，帮你寻找世界上和你同年同月同日的小伙伴，由于寻找同年同月同日是小概率事件，请大家多多转发本网站，这样更有几率寻找到同年同月同日小伙伴。</p>
+      <p>另一个你网站，基于<span class="blod">星云区块链技术.信息录入 即永久保存.N年后也可以来查看是否有同年同月同日小伙伴</span>。</p>
+      <p><span class="red">注意:</span> 请输入公历生日, 农历生日在大范围内还是不怎么流行，会导致匹配错误。邮箱请填写常用邮箱。</p>
+    </div>
+  </div>
+  <div class="footer">
+    <a target="_Blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">星云钱包安装</a>
+    <a target="_Blank" href="https://blog.nebulas.io/2018/04/12/creating-a-nas-wallet/">星云钱包开户</a>
+    <a target="_Blank" href="https://webkonglong.github.io/wishingwall/">区块链许愿墙</a>
+    <a href="mailto:anmingzhe@me.com">联系我anmingzhe@me.com</a>
+    <a target="_Blank" href="https://webkonglong.github.io/reward/">打赏</a>
+  </div>
+  <div class="toast" id="toast"></div>
+  <div class="loading" id="loading">
+    <img src="./img/loading.png" alt="">
+  </div>
+
+  <script src=./lib/jquery.js></script>
+  <script src=./lib/nebPay.js></script>
+  <script src=./lib/nebulas.js></script>
+  <script src=./index.js></script>
+</body>
+</html>
